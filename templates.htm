@@ -4,495 +4,765 @@
 
 {template root}
 
-
-  <html>
-    <head>
-      <meta name="title" content="zapcar.ru" />
-      <title>iShop.ru</title>
-      <meta name="keywords" content="Интернет-магазин для сантехнических работ " />
-      <meta name="description" content="Интрернет-магазин сантехнических работ по СПб и Лен. обл." />
-      <link rel="shortcut icon" href="http://www.iShop.ru/favicon.ico" type="image/x-icon" />
-      <link rel="icon" href="http://www.iShop.ru/favicon.ico" type="image/x-icon" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <link rel="stylesheet" type="text/css" href="/_css/main.css" />
-      <link rel="stylesheet" type="text/css" href="/_css/ar2.css" />
-      <link rel="stylesheet" type="text/css" href="/_css/menu.css" />
-      <link rel="stylesheet" type="text/css" href="/_css/select.css" />
-      <link rel="stylesheet" type="text/css" href="/_css/dc3c.css" />
-      <script type="text/javascript" src="/_syslib/lib.common.js"></script>
-      <script type="text/javascript" src="/_syslib/advanced.select.js"></script>
-      <script type="text/javascript" src="/_syslib/menu/codethatsdk.js"></script>
-      <script type="text/javascript" src="/_syslib/menu/codethatmenupro.js"></script>
-      <script type="text/javascript" src="/_client-side/class.MavSelectBox.js"></script>
-      <script type="text/javascript" src="/_syslib/mootools.js"></script>
-      <script type="text/javascript" src="/_syslib/mootools-1.2-more.js"></script>
-      <script type="text/javascript" src="/_client-side/scripts.js"></script>
-    </head>
-
-
-    <body id="page" class="auth_page">
-      <div id="header">
-        <div id="wrapper">
-          <div class="header_content">
-            <div class="logo"><a href="/" title="вернуться на главную"><div class="logo_content"></div></a>
-            </div>
-
-
-            <div class="content">
-
-
-              <div class="phone">
-                <table>
-                  <tr>
-                    <td valign="top"><img src="/images/phone_header.png"/></td>
-                    <td valign="top">
-                      <div class="code">
-                        <div class="pageContent">(812)</div>
-                      </div>
-                    </td>
-                    <td valign="bottom">
-                      <div class="pageContent">980-56-16</div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-
-
-              <div class="login">
-                <img src="/images/key_ico.png"><a href="#" onclick="return toogle_login();" class="login_header">войти на
-                    сайт</a>
-                  <div id="login_content" style="display: none;">
-                    <div id="login_block">
-                      <div style="text-align: right;"><a href="#" onclick="return toogle_login();" style="font-size:10px;">скрыть</a></div>
-                      <div id="CustomerBasketId">
-
-
-
-
-
-
-                        <script type="text/javascript">
-
-                          <!-- function validate_login_form(arg) {
-
-                               if (arg.userlogin.value == 'логин')
-                               arg.userlogin.value = '';
-
-                               if (arg && arg.userlogin &&
-
-                               trim(arg.userlogin.value) == ''
-
-                               && isElementVisible(arg.userlogin)) {
-
-                               alert('Пожалуйста, введите значение поля "логин"');
-
-                               arg.userlogin.focus();
-
-                               return false;
-
-                               }
-
-                               if (arg.userpassword.value == 'пароль')
-                               arg.userpassword.value = '';
-
-                               if (arg && arg.userpassword &&
-
-                               trim(arg.userpassword.value) == ''
-
-                               && isElementVisible(arg.userpassword)) {
-
-                               alert('Пожалуйста, введите значение поля "пароль"');
-
-                               arg.userpassword.focus();
-
-                               return false;
-
-                               }
-
-                               elems = arg.getElementsByTagName('input');
-                               elems_l = elems.length;
-
-                               for(var i=0; i<elems_l; i++){
-                                                       elems[i].readOnly='readonly';
-                                                       if(elems[i].className == 'submitButton'){
-                                                       elems[i].style.display='none';
-                                                       }
-                                                       }
-//              arg.style.backgroundColor = '#D4D0C8';
-                                                       return true;
-
-                                                       } -->
-
-                               </script>
-
-
-
-                        <form name="login" action="/" method="post" onsubmit="return validate_login_form(this)">
-                          <input type="hidden" name="loginform" value="1" />
-                          <table class="ar2_basket_info">
-                            <tr>
-                              <td colspan="2">
-                                <msg1>
-                                  <h3>Вход в интернет-магазин</h3>
-                                </msg1>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">
-                                <input type="text" name="userlogin" value="логин" class="TextBox_empty"
-                                style="width: 200px" onfocus="if (this.value == 'логин') { this.value = '';
-                                this.className = 'TextBox_focus'; }" onblur="if (this.value == '') {
-                                this.value = 'логин'; this.className = 'TextBox_empty'; } else {
-                                this.className = 'TextBox'; }" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="2">
-                                <input type="password" name="userpassword" value="пароль" class="TextBox_empty"
-                                 style="width: 200px" onfocus="if (this.value == 'пароль') { this.value = '';
-                                 this.className = 'TextBox_focus'; }" onblur="if (this.value == '') {
-                                 this.value = 'пароль'; this.className = 'TextBox_empty'; } else {
-                                 this.className = 'TextBox'; }" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <input type="checkbox" name="remember" value="1" id="cb1" class="CheckBox" style="" />
-                                <label for="cb1">запомнить данные</label>
-                              </td>
-                              <td>
-                                <input type="submit" name="login" value="Вход" class="submitButton" style="" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="2" align="center" height="30">
-                                <a href="/registration.html">Регистрация</a> / <a href="/recover_password.html">
-                                  <msg3>Забыли пароль?</msg3>
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div style="clear: both;"></div>
-                <div class="search">
-                  <form name="search_code" action="/search.html" method="get" onsubmit="return validate_search_code_form(this)">
-                    <table border="0" cellspacing="3" cellpadding="2" style="font-size: 11px; margin-top: 15px;">
-                      <tr>
-                        <td style="width: 140px;font-size: 16px;font-family: Myriad Pro, Arial, sans-serif;
-                                   padding-right: 10px;" valign="center" align="left">
-                          <nobr>ПОИСК ПО АРТИКУЛУ</nobr>
-                        </td>
-                        <td style="width:100%;padding-right:20px;">
-                          <input class="TextBox_empty" type="text" name="article" value="артикул"
-                                 style="width: 100%"
-                                 onfocus="if (this.value == 'артикул') { this.value = ''; this.className =
-                                 'TextBox_focus'; } "
-                                 onblur="if (this.value == '') { this.value = 'артикул'; this.className =
-                                 'TextBox_empty'; }
-                                 else { this.className = 'TextBox'; }"/></td>
-                        <td style="width:75px" align="center">
-                          <input name="search" value="искать" type="submit" class="submitButton" />
-                        </td>
-                        <td style="width:30px; padding-left: 10px;" align="right">
-                          <a href="#" onclick="return toogle_Ssettings();"><img src="/images/search_settings.png" style="margin-bottom:-3px;"></a>
-                            <div id="search_settings" style="display: block;" class="search_settings">
-                              <p style="text-align: right;"><a href="#" onclick="return toogle_Ssettings();"
-                                                               style="font-size: 10px;">скрыть</a></p>
-                              <p><nobr><b>Сортировать:</b></nobr></p>
-                              <div>
-                                <select id="sort___search_results_by"
-                                        name="sort___search_results_by"
-                                        style="width: 140px; height: 25px;">
-                                  <option value="final_price">по цене</option>
-                                  <option value="code">по коду</option>
-                                </select>
-                              </nobr>
-                            </div>
-                            <p style="display:none;"><nobr><b>Срок поставки</b></nobr></p>
-                            <div style="display:none;">
-                              <select id="term" name="term" style="width:125px; height: 25px;">
-                                <option value="0">Не важен</option>
-                                <option value="10">До 10 дней</option>
-                                <option value="8">До 8-ми дней</option>
-                                <option value="5">До 5 дней</option>
-                                <option value="3">До 3-х дней</option>
-                                <option value="1">1 день</option>
-                              </select>
-                            </div>
-                            <p><nobr><b>Режим поиска</b></nobr></p>
-                            <div>
-                              <select id="smode" name="smode" style="width:140px">
-                                <option value="A">с аналогами</option>
-                                <option value="A0">без аналогов</option>
-                              </select>
-                            </div>
-
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-
-
-
-                    <script>
-                      window.onload = function() {document.getElementById("search_settings").style.display = "none";}
-                      function toogle_Ssettings() {
-                      if (document.getElementById("search_settings").style.display == "none") {
-                      document.getElementById("search_settings").style.display = "block";
-                      document.getElementById("search_settings").style.visibility = "visible";
-                      }
-                      else {
-                      document.getElementById("search_settings").style.display = "none";
-                      }
-                      return false;
-                      }
-                    </script>
-
-                  </form>
-
-                  <script type="text/javascript">
-                    <!--
-                       function validate_search_code_form(arg) {
-                       if (arg.article.value == 'артикул') arg.article.value = '';
-                       if (arg && trim(arg.article.value) == '' && isElementVisible(arg.article)) {
-                       alert('Пожалуйста, укажите значение поля "артикул"');
-                       arg.article.focus();
-                       return false;
-                       }
-
-
-                       if(arg.target=='_self'||arg.target==''||arg.target =='content_frame'){
-                       var b = arg.getElementsByTagName('input');
-                       for(var a=0, c=b.length; a < c; a++){
-                                                    b[a].readOnly='readonly';
-                                                    if(b[a].className == 'submitButton'||b[a].type=='submit'){
-                                                    b[a].style.display='none';
-                                                    }
-                                                    }
-                                                    }
-
-                                                    return true;
-                                                    }
-
-                                              //-->
-                       </script>
-                </div>
-              </div>
-
-              <script>
-                function toogle_login() {
-                if (document.getElementById('login_content').style.display == "none") {
-                document.getElementById('login_content').style.display = "";
-                }
-                else {
-                document.getElementById('login_content').style.display = "none";
-                }
-                return false;
-                }
-              </script>
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div class="main_menu">
-          <div id="wrapper">
-            <div id="top_menu" class="flc">
-              <script type="text/javascript">
-
-                <!--var jshover = function() {
-                        var sfEls = document.getElementById("top_menu").getElementsByTagName("li");
-                        for (var i=0; i < sfEls.length; i++)
-                                          {
-                                          sfEls[i].onmouseover=function()
-                                          {
-                                          this.className+=" jshover";
-                                          }
-                                          sfEls[i].onmouseout=function()
-                                          {
-                                          this.className=this.className.replace(new RegExp(" jshover\\b"), "");
-                                          }
-                                          }
-                                          }
-
-                                          if (window.attachEvent)
-                                          window.attachEvent("onload", jshover); -->
-              </script>
-              <ul>
-                <li >
-                  <a href="/about/company/">О компании</a>
-                </li>
-                <li >
-                  <a href="/how_to_order.html">Как сделать заказ</a>
-                </li>
-                <li >
-                  <a href="/pay.html">Оплата</a>
-                </li>
-                <li >
-                  <a href="/delivery.html">Доставка</a>
-                </li>
-                <li >
-                  <a href="">VIN-запросы</a>
-                  <ul>
-                    <li >
-                      <a href="/vin/form.html">Новый запрос</a>
-                    </li>
-                    <li class="last" >
-                      <a href="/shop/vin_requests.html">Архив запросов</a>
-                    </li>
-                  </ul>
-                </li>
-                <li >
-                  <a href="/partners.html">Наши партнеры</a>
-                </li>
-                <li >
-                  <a href="/info.html">Информация для клиентов</a>
-                </li>
-                <li class="last" >
-                  <a href="/contacts.html">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div id="wrapper">
-          <div id="middle">
-            <div id="container">
-              <div id="content">
-                <div id="content_inner">
-                  <div class="pageContent"><h1>Специальные предложения</h1>
-                    <table width="100%">
-                      <tr>
-                        <td><a href="/d_catalog3/3/?nav_id=0"><img src="/images/zap_hyndai_porter.png"/></a></td>
-                        <td><a href="#"><img src="/images/acsessuary_dop_oborudovanie.png"/></a></td>
-                        <td><a href="d_catalog3/7/?nav_id=0"><img src="/images/zap_kit_avto.png"/></a></td>
-                      </tr>
-                      <tr>
-                        <td colspan="3" style="height: 25px;">
-                          <div style="height: 25px;"></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="/d_catalog3/1/?nav_id=0"><img src="/images/maslo_zidkosti.png"/></a></td>
-                        <td><a href="/d_catalog3/6/?nav_id=0"><img src="/images/kuzov_zap.png"/></a></td>
-                        <td><a href="#"><img src="/images/zap_to.png"/></a></td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div style="height: 50px">
-                  </div>
-
-                  <h1>Анонсы</h1>
-
-                  <table width="100%"  style="margin-top: 20px; margin-bottom: 20px">
-                    <tr>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-
-
-
-            <div class="sidebar" id="sideLeft">
-              <div id="sb_inner">
-                <div style="padding-bottom: 20px;">
-                  <div class="pageContent"><a href="#"><img src="/images/acsessuary_zap.png"/></a></div></div>
-                <div style="padding-bottom: 20px;">
-                  <div class="pageContent"><a href="#"><img src="/images/spec_predl.png"/></a></div></div>
-                <div style="padding-bottom: 20px;">
-                  <div class="pageContent"><a href="#"><img src="/images/sale.png"/></a></div></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-
-
-        <div id="footer">
-          <div id="wrapper">
-            <div id="middle">
-              <table border="0" width="100%">
-                <tr>
-                  <td style="padding-left: 20px" class="white">
-                    <p>
-                      <a href="/message/" title="Обратная связь" style="margin-right: 35px;">Обратная связь</a>
-                      <a href="/sitemap.html" title="Карта сайта">Карта сайта</a>
-                    </p>
-                    <p style="padding-top: 15px;">
-                      &copy; 2012 iShop.ru. Все права защищены. <br/>
-                      <div style="color:#9a9a9a;">Сделано <a href="helaveesa.nolder@gmail.com"
-                                                             title="Helaveesa"
-                                                             style="color: #9a9a9a;">Helaveesa Nolder</a></div>
-                    </p>
-                  </td>
-                  <td align="right" style="padding-right: 20px" >
-                    <table>
-                      <tr>
-                        <td style="padding-bottom: 5px;" width="90"><img src="/images/phone_footer.png"/></td>
-                        <td style="padding-bottom: 5px;" valign="top"
-                            align="left">
-                          <div class="pageContent">8(812)980-56-16</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 5px;"><img src="/images/icq_footer.png"/></td>
-                        <td style="padding-bottom: 5px;" valign="top"
-                            align="left">
-                          <div class="pageContent">684654654</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 5px;"><img src="/images/skype_footer.png"/></td>
-                        <td style="padding-bottom: 5px;" valign="top"
-                            align="left">
-                          <div class="pageContent">iShop.ru</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding-bottom: 5px;"><img src="/images/email_footer.png"/></td>
-                        <td style="padding-bottom: 5px;" valign="top"
-                            align="left">
-                          <div class="pageContent">helaveesa.nolder@gmail.com</div>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-
-
-        <script>
-
-/*function replaceSelect(el) {
-        new MavSelectBox({
-        elem: el.id,
-        onSelect: el.onchange
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>BabyToBee - What to Expect When Expecting a Baby</title>
+
+    <!--//
+    <link href="http://www.babytobee.com/assets/images/b2b_fav32.png"
+    type="image/png" rel="icon" />
+    -->
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link href="/favicon.ico" type="icon" rel="shortcut icon" />
+    <link href="http://www.babytobee.com/assets/stylesheets/site.css"
+    type="text/css" rel="stylesheet" />
+    <link href="http://www.babytobee.com/assets/stylesheets/jquery-ui-1.7.3.custom.css"
+    type="text/css" rel="stylesheet" />
+    <script src="http://www.babytobee.com/assets/scripts/jquery-1.4.1.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/jquery.corner.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/jquery-ui-1.8.4.custom.min.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/navigation.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/validatekeywords.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/jquery.ui.core.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/jquery.ui.datepicker.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/jquery.calculation.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/jquery.formatCurrency-1.4.0.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/MicrosoftAjax.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/MicrosoftMvcAjax.js"
+    type="text/javascript"></script>
+    <script src="http://www.babytobee.com/assets/scripts/jquery.dropmenu-1.1.3.js"
+    type="text/javascript"></script>
+
+    <script type="text/javascript"
+    src="http://www.babytobee.com/assets/scripts/jquery.fancybox-1.3.1.pack.js"></script>
+    <script type="text/javascript"
+    src="http://www.babytobee.com/assets/scripts/jquery.easing-1.3.pack.js"></script>
+    <link rel="stylesheet"
+    href="http://www.babytobee.com/assets/stylesheets/jquery.fancybox-1.3.1.css"
+    type="text/css" media="screen" />
+
+    <script type="text/javascript">
+        $(function() {
+            $('.watermark-txt').focus(function() {
+            $(this).removeClass('watermark-txt'); if ($(this).val() ==
+            this.defaultValue) { $(this).val(''); } }).blur(function()
+            { if ($(this).val() == '') {
+            $(this).val(this.defaultValue).addClass('watermark-txt');
+            } });
+            $('#newnav > ul').dropmenu({ effect: 'slide', nbsp: true
+            });
+            $('#newnav ul li ul.hidden').removeClass('hidden');
+            $('.dropmenu-slide').removeClass('dropmenu-slide');
         });
-        }*/
+    </script>
+<meta name="description" content="BabyToBee brings new or expecting
+                                  mothers together supporting and
+                                  educating new mothers on what to
+                                  expect when expecting a baby." />
 
-        </script>
+</head>
+<body>
+    <div id="main">
+        <div id="content">
 
-      </body>{/n}
-    </html>{/n}
+<table width="980" border="0" align="center" cellpadding="0"
+       cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td bgcolor="#84779E">
+        <div style="float: left; width:
+        35px;"><img src="http://www.babytobee.com/assets/images/accent-left.gif"
+        alt="" /></div>
+        <div style="float: left; width: 212px; margin-top:
+        4px;"><a href="/"><img src="http://www.babytobee.com/assets/images/babytobee-logo.gif"
+        border="0" alt="babytobee.com" title="babytobee.com"
+        /></a></div>
+        <div style="float: right; width:
+        65px;"><img src="http://www.babytobee.com/assets/images/accent-right.gif"
+        alt=""/></div>
+        <div style="float: right;">
+            <div style="float:left;height:40px;margin-top:10px;margin-right:35px;text-align:center;">
+            <form name="keywordsearch_inheader"
+            id="keywordsearch_inheader" action="/SearchResults"
+            onsubmit="return validatekeywords(this)">
+                <input class="watermark-txt" type="text"
+            name="keywords" id="keywords" value="Search Site for "
+            style="height: 20px; vertical-align: top; border: none
+            0px;padding-left:5px;" />
+                <input type="image"
+            src="http://www.babytobee.com/assets/images/search-btn.gif"
+            alt="Search" style="padding-left: 10px;" />
+            </form>
+            </div>
+            <div style="float:left;height:30px;
+            padding-top:10px;margin-left:15px;">
 
-    <!DOCTYPE html
-              PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+            <a href="http://www.babytobee.com/member/login/"
+            class="hdrlink" rel="nofollow">Sign
+            In</a>&nbsp;&nbsp;&nbsp;<a href="http://www.babytobee.com/member/signup/"
+            class="hdrlink" rel="nofollow">or&nbsp;&nbsp;&nbsp;Become
+            a Member</a>
 
-{/template}
+            <a href="http://www.facebook.com/BabytoBee"
+            target="_blank"><img src="http://www.babytobee.com/assets/images/icons/facebook_icon.png"
+            alt="" height="20" width="20" style="vertical-align:
+            middle; padding: 0 5px 5px 5px;" border="0"/></a>
+            <a href="http://twitter.com/#!/babytobee"
+            target="_blank"><img src="http://www.babytobee.com/assets/images/icons/twitter_icon.png"
+            alt="" height="20" width="20" style="vertical-align:
+            middle; padding: 0 5px 5px 5px;" border="0"/></a>
+            </div>
+        </div>
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#BBB8D6" align="center">
+        <div><img src="http://www.babytobee.com/assets/images/nav-accent-top.gif"
+        border="0" alt="" /></div>
+        <div id="newnav"><ul class="dropmenu dropmenu-slide">
+            <li><a href="/" class="toplevel">Home</a></li>
+            <li><a href="/baby-planning.html" class="toplevel">Baby
+            Planning</a>
+              <ul class="hidden">
+                <li><a href="/get-pregnant.html"
+                class="tnavsublink">Getting Pregnant</a></li>
+                <li><a href="/infertility-support.html"
+                class="tnavsublink">Infertility</a></li>
+                <li><a href="/planning-adoption.html"
+                class="tnavsublink">Adoption</a></li>
+                <li><a href="/womens-health-prenatal.html"
+                class="tnavsublink">Woman's Health</a></li>
+                <li><a href="/moms-over-35.html"
+                class="tnavsublink">Moms Over 35</a></li>
+                </ul>
+              </li>
+            <li><a href="/pregnancy.html"
+            class="toplevel">Pregnancy</a>
+              <ul class="hidden">
+                <li><a href="/wellness-care-exercises.html"
+                class="tnavsublink">Wellness Care</a></li>
+                <li><a href="/pregnancy-checkups.html"
+                class="tnavsublink">Moms Over 35</a></li>
+                <li><a href="/pregnancy-safety.html"
+                class="tnavsublink">Pregnancy Safety</a></li>
+                <li><a href="/planning-finances.html"
+                class="tnavsublink">Planning Finances</a></li>
+                <li><a href="/your-partner.html"
+                class="tnavsublink">Your Partner</a></li>
+                <li><a href="/baby-naming.html"
+                class="tnavsublink">Naming a Baby</a></li>
+                <li><a href="/baby-celebrations.html"
+                class="tnavsublink">Baby Showers</a></li>
+                <li><a href="/fetal-development.html"
+                class="tnavsublink">Week to Week</a></li>
+                <li><a href="/labor-and-delivery.html"
+                class="tnavsublink">Labor and Delivery</a></li>
+                <li><a href="/birth-process.html"
+                class="tnavsublink">Birth Process</a></li>
+                </ul>
+              </li>
+            <li><a href="/first-year.html" class="toplevel">First
+            Year</a>
+              <ul class="hidden">
+                <li><a href="/bringing-baby-home.html"
+                class="tnavsublink">Bringing Baby Home</a></li>
+                <li><a href="/breastfeeding.html"
+                class="tnavsublink">Breastfeeding</a></li>
+                <li><a href="/moms-wellness.html"
+                class="tnavsublink">Mom's Wellness</a></li>
+                <li><a href="/new-moms.html" class="tnavsublink">New
+                Moms</a></li>
+                <li><a href="/working-moms.html"
+                class="tnavsublink">Working Moms</a></li>
+                <li><a href="/stay-at-home-moms.html"
+                class="tnavsublink">Stay At Home Moms</a></li>
+                <li><a href="/baby-development.html"
+                class="tnavsublink">Baby Development</a></li>
+                </ul>
+              </li>
+            <li><a href="http://www.babytobee.com/products"
+            class="toplevel">Shop and Save</a></li>
+            <li><a href="http://www.babytobee.com/member/signup/"
+            class="toplevel">Join the Hive!</a></li>
+            <li><a href="http://www.babytobee.com/bee-tools.html"
+            class="toplevel">Bee Tools</a></li>
+            <li><a href="/free-stuff.html" class="toplevel"
+            target="_blank">Free Stuff</a></li>
+</ul>
+</div>
+        <div style="padding:0;margin:0;"><img src="http://www.babytobee.com/assets/images/nav-accent-btm.gif"
+        border="0" alt="" /></div>
+    </td>
+  </tr>
+            <tr><td style=" padding-left: 12px; background-image:
+            url(http://www.babytobee.com/assets/images/top-gradient.jpg);
+            background-repeat: repeat-x; height: 30px;"
+            ><div style="float:left;margin-top:10px;"><!--// --></div><div style="float:right;margin-top:10px;margin-bottom:10px;margin-right:30px;"></div></td></tr>
+            <tr>
+                <td valign="top" width="100%">
+    <table cellpadding="0" cellspacing="0" border="0"
+    style="margin-top: 2px;margin-left: 16px;margin-right:
+    16px;margin-bottom: 2px;">
+        <tr>
+            <td valign="top">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0"
+    border="0">
+                                <tr>
+                                    <td align="center">
+                                        <div style="background-color:#F7AE48;padding:5px;">
+                                            <div style="width:198px;margin-top:5px;margin-bottom:6px;">
+                                                <div><a href="/baby-planning.html"><img src="http://www.babytobee.com/assets/images/babyplan.jpg"
+                                                alt="" title=""
+                                                border="0"
+                                                /></a></div>
+                                                <div style="font-family:Georgia;font-weight:bold;font-size:19px;color:#5F3E2F;text-align:left;">Baby
+                                                Planning</div>
+                                                <div style="font-family:Arial;font-size:11px;color:#5F3E2F;line-height:14px;text-align:left;
+                                                margin-top: 5px;">With
+                                                doctors, finances and
+                                                everything else,
+                                                there's so much to
+                                                think about! Here's
+                                                what you need to
+                                                do...</div>
+                                                <div style="text-align:right;margin-top:10px;"><a href="/baby-planning.html"><img src="http://www.babytobee.com/assets/images/readmore-babyplan.gif"
+                                                border="0" alt=""
+                                                title="" /></a></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="8px">&nbsp;</td>
+                                    <td align="center">
+                                        <div style="background-color:#CCD479;padding:5px;">
+                                            <div style="width:198px;margin-top:5px;margin-bottom:6px;">
+                                                <div><a href="/pregnancy.html"><img src="http://www.babytobee.com/assets/images/impreg.jpg"
+                                                alt="" title=""
+                                                border="0"
+                                                /></a></div>
+                                                <div style="font-family:Georgia;font-weight:bold;font-size:19px;color:#5F3E2F;text-align:left;">I'm
+                                                Pregnant</div>
+                                                <div style="font-family:Arial;font-size:11px;color:#5F3E2F;line-height:14px;text-align:left;
+                                                margin-top: 5px;">Find
+                                                out what types of
+                                                things you can expect
+                                                in the first few weeks
+                                                of pregnancy such as
+                                                sleepiness,...</div>
+                                                <div style="text-align:right;margin-top:10px;"><a href="/pregnancy.html"><img src="http://www.babytobee.com/assets/images/readmore-impreg.gif"
+                                                border="0" alt=""
+                                                title="" /></a></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="8px">&nbsp;</td>
+                                    <td align="center">
+                                        <div style="background-color:#DFD6E8;padding:5px;">
+                                            <div style="width:198px;margin-top:5px;margin-bottom:6px;">
+                                                <div><a href="/first-year.html"><img src="http://www.babytobee.com/assets/images/firstyr.jpg"
+                                                alt="" title=""
+                                                border="0"
+                                                /></a></div>
+                                                <div style="font-family:Georgia;font-weight:bold;font-size:19px;color:#5F3E2F;text-align:left;">First
+                                                Year</div>
+                                                <div style="font-family:Arial;font-size:11px;color:#5F3E2F;line-height:14px;text-align:left;
+                                                margin-top: 5px;">Get
+                                                advice and information
+                                                on how to transition
+                                                into your new role as
+                                                a parent. Learn
+                                                effective
+                                                ways...</div>
+                                                <div style="text-align:right;margin-top:10px;"><a href="/first-year.html"><img src="http://www.babytobee.com/assets/images/readmore-firstyr.gif"
+                                                border="0" alt=""
+                                                title="" /></a></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="10px">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+
+<div id="buzz-box">
+    <div id="buzz-loading"><img src="http://www.babytobee.com/assets/images/loading.gif"
+    alt="Loading..."/></div>
+</div>
+<script type="text/javascript">
+    $(function() {
+
+        $.ajax({
+            type: "POST",
+            dataType: 'json',
+            url: "/article/latest/",
+            success: function(response) {
+                var __bHTML = '<table cellpadding="2"
+            cellspacing="0">';
+                $(response.Data).each(function() {
+                __bHTML += '\r\n\t<tr><td class="cell1"><a href="/' +
+            this.Link +
+            '#comments"><img src="http://www.babytobee.com/assets/images/arrow-grn.gif"
+            border="0" alt="" title=""
+            /></a></td><td  class="cell2"><a href="/' + this.Link + '"
+            class="thebuzz-link">' + this.Title +
+            '</a></td><td class="cell3 thebuzz-comment">New
+            Article</td></tr>';
+                });
+                __bHTML += '\r\n\r\n</table>';
+                $('#buzz-box').html(__bHTML);
+            },
+            error: function() { $('#buzz-loading').html('The article
+            feed is not avaliable at this time'); }
+        });
+    });
+</script>
+                            <div style="float:right;background-color:#D7DEDD;height:284px;width:208px;margin-right:10px;margin-top:10px;">
+                                <div style="height:133px;width:196px;margin-left:auto;margin-right:auto;padding-top:7px;"><img src="http://www.babytobee.com/assets/images/wktowk.jpg"
+                                border="0" alt="" title="" /></div>
+                                <div style="width:196px;margin-left:auto;margin-right:auto;padding-top:15px;color:#5F3E2F;
+                                font-size:13px; font-family:Georgia,
+                                serif; font-weight:bold;
+                                line-height:16px;">Discover your
+                                baby's week to week development
+                                at:</div>
+                                <div style="height:71px;width:187px;margin-left:auto;margin-right:auto;margin-top:15px;background:url('http://www.babytobee.com/assets/images/btns.gif');background-repeat:no-repeat;">
+                                    <div><a href="/week-eight.html"
+                                    class="wktowk-link"
+                                    style="float:left;margin-left:15px;margin-top:10px;">8
+                                    weeks >></a></div>
+                                    <div><a href="/week-thirty-two.html"
+                                    class="wktowk-link"
+                                    style="float:left;margin-left:30px;margin-top:10px;">32
+                                    weeks >></a></div>
+                                    <div style="clear:both;"></div>
+                                    <div><a href="/week-sixteen.html"
+                                    class="wktowk-link"
+                                    style="float:left;margin-left:13px;margin-top:22px;">16
+                                    weeks >></a></div>
+                                    <div><a href="/week-forty.html"
+                                    class="wktowk-link"
+                                    style="float:left;margin-left:26px;margin-top:22px;">40
+                                    weeks >></a></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="lnews"
+                            style="float:left;width:615px;margin-top:10px;
+                            background-color: #F7F5ED; padding: 10px;
+                            border: 1px solid #EDE5CE;">
+
+                                <div class="newsitem">
+                                    <h1 style="color:#5F3E2F;
+                                    font-size:17px; font-family:
+                                    Georgia, serif;
+                                    font-weight:normal;
+                                    padding-bottom:10px;">What Can You
+                                    Expect From BabytoBee.com?</h1>
+                                    BabytoBee is the place for
+                                    information and services related
+                                    to baby planning, pregnancy
+                                    advice, and support for new
+                                    moms. We provide informative
+                                    articles and tools necessary
+                                    toward prenatal and postnatal
+                                    care, along with providing you a
+                                    community of women to rely on for
+                                    every type of woman, from all
+                                    lifestyles&#151;see for yourself!
+                                </div>
+
+                                <div class="newsitem">
+                                    <a href="/get-pregnant.html">Are
+                                    You Planning to Conceive in the
+                                    Near Future?</a>
+                                    <ul>
+                                        <li>Read up on various topics,
+                                        such as infertility concerns
+                                        or conceiving when you are 35
+                                        years of age.</li>
+                                        <li>Members: Access tools to
+                                        plan the best time to ovulate
+                                        and track your fertility or
+                                        remind you of your doctor’s
+                                        appointments!</li>
+                                    </ul>
+                                </div>
+
+                                <div class="newsitem">
+                                    <a href="/pregnancy.html">Are You
+                                    Pregnant?</a>
+                                    <ul>
+                                        <li>Share tips and tricks
+                                        about avoiding nausea and back
+                                        pain, along with saving money
+                                        to having a stress-free
+                                        pregnancy! Discuss with
+                                        experienced moms the highs and
+                                        lows of pregnancy!</li>
+                                        <li>Members: Access
+                                        necessities and savings under
+                                        "free stuff" for your little
+                                        bee!</li>
+                                    </ul>
+                                </div>
+
+                                <div class="newsitem">
+
+                                        <a href="/free-stuff.html"
+                                        target="_blank"><img src="http://www.babytobee.com/assets/images/banners/banner-showeryourlil.gif"
+                                        border="0" alt="" title=""
+                                        /></a>
+
+                                </div>
+
+                                <div class="newsitem">
+                                    <a href="/new-moms.html">Are You a
+                                    New Mom?</a>
+                                    <ul>
+                                        <li>Track vaccinations,
+                                        monitor sleep patterns, and
+                                        find the right childcare. Our
+                                        online community is available
+                                        to offer advice from medical
+                                        experts and new moms who have
+                                        been through it all!</li>
+                                        <li>Members: Nurture your body
+                                        and your mind, and prepare to
+                                        have all of the resources and
+                                        tools necessary to accomplish
+                                        your goal - a beautiful
+                                        BabytoBee miracle!</li>
+                                    </ul>
+                                </div>
+
+                                <div class="newsitem">
+                                    <b>Jump to:</b><br /><br />
+                                    <a href="/baby-planning.html">Baby
+                                    Planning</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/pregnancy.html">I'm
+                                    Pregnant</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/first-year.html">First
+                                    Year</a>
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="300px" valign="top"
+                                    style="font-family:Arial;font-size:11px;color:#5F3E2F;line-height:14px;">
+                <table cellpadding="0" cellspacing="0" border="0"
+                       width="100%">
+                    <tr>
+
+                          <td><a href="http://www.babytobee.com/member/signup/"><img src="http://www.babytobee.com/assets/images/banners/mybee-joinnow.jpg"
+                          border="0" alt="" title="" /></a></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style=" margin-top: 13px;">
+                            <div class="banner-300x250">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8704087287998371";
+/ 300x250 ATF /
+google_ad_slot = "3035901235";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">;
+</script>
+</div>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <div style=" margin-top: 2px;">
+
+<table cellpadding="0" cellspacing="0" border="0" width="300"
+       bgcolor="#EDE5CE">
+    <tr><td><div style="margin-top:10px; text-align:
+    center;"><img src="http://www.babytobee.com/assets/images/ovultion-calc-header.gif"
+    alt="" title="" /></div></td></tr>
+    <tr>
+        <td>
+        <form name="ovucalc" action="Ovulation-Calculator.html">
+            <table cellpadding="2" cellspacing="2" border="0"
+    style="margin-left:25px;margin-right:25px;">
+                <tr><td colspan="2" align="left">First day of last
+                menstrual cycle:</td></tr>
+                <tr>
+                    <td colspan="2" align="left">
+                        <select id="mmonth" name="mmonth"
+                class="ovucalc-dropdown">
+                            <option value="" selected>Month</option>
+                            <option value="1">Jan</option>
+                            <option value="2">Feb</option>
+                            <option value="3">Mar</option>
+                            <option value="4">Apr</option>
+                            <option value="5">May</option>
+                            <option value="6">Jun</option>
+                            <option value="7">Jul</option>
+                            <option value="8">Aug</option>
+                            <option value="9">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                        <select id="mday" name="mday"
+                                class="ovucalc-dropdown">
+                            <option value="" selected>Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select id="myear" name="myear"
+                                class="ovucalc-dropdown">
+                            <option value="" selected>Year</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">Number of days in cycle:</td>
+                    <td>
+                        <select id="cycle" name="cycle"
+                                class="ovucalc-dropdown">
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option selected="selected"
+                            value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">Luteal Phase Lengh:</td>
+                    <td>
+                        <select id="luteal" name="luteal"
+                                class="ovucalc-dropdown">
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option selected="selected"
+                            value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="2"
+                align="left"><div style="margin-bottom:
+                10px"><input type="image"
+                src="http://www.babytobee.com/assets/images/submit-btn2.gif"
+                /></div></td></tr>
+            </table>
+            </form>
+        </td>
+    </tr>
+</table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <div style=" margin-top: 13px;">
+                            <div class="banner-300x250">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8704087287998371";
+/ Adsense 300x250 /
+google_ad_slot = "7471224072";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">;
+</script>
+</div>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style=" margin-top: 2px;">
+
+
+<script type="text/javascript">
+    $(function() {
+        $('#save-poll').click(function() {
+            $('#errors').text('');
+            $('#pollForm button').attr('disabled', 'disabled');
+            $('#WeeklyPoll').load('/Shared/Poll/?' +
+        $('#pollForm').serialize()+'&t='+ new Date().getTime());
+        });
+    });
+</script>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</td>
+            </tr>
+
+  <tr><td><img src="http://www.babytobee.com/assets/images/btm-gradient.jpg"
+  border="0" alt="" /></td></tr>
+  <tr>
+    <td bgcolor="#BAC267">
+        <div style="float: left; width:
+        26px;"><img src="http://www.babytobee.com/assets/images/ftr-accent-left.gif"
+        alt="" /></div><div style="float: right; width:
+        32px;"><img src="http://www.babytobee.com/assets/images/ftr-accent-right.gif"
+        alt=""/></div>
+        <div style="float:left;height:50px;margin-left:30px;margin-top:20px;"><img src="http://www.babytobee.com/assets/images/ftr-logo.gif"
+        border="0" alt="" /><span class="trademark">&copy;
+        2012</span></div>
+        <div style="float:right;height:50px;margin-right:30px;margin-top:40px;"><img src="http://www.babytobee.com/assets/images/hive.gif"
+        border="0" alt="" />&nbsp;&nbsp;&nbsp;<a href="/"
+        class="footerlink">Home</a>&nbsp;&nbsp;&nbsp;<span class="footercopy">:</span>&nbsp;&nbsp;&nbsp;<a href="http://www.babytobee.com/about-us.html"
+        class="footerlink" rel="nofollow">About
+        Us</a>&nbsp;&nbsp;&nbsp;<span class="footercopy">:</span>&nbsp;&nbsp;&nbsp;<a href="http://www.babytobee.com/terms-of-use.html"
+        class="footerlink">Terms of
+        Use</a>&nbsp;&nbsp;&nbsp;<span class="footercopy">:</span>&nbsp;&nbsp;&nbsp;<a href="http://www.babytobee.com/privacy-policy.html"
+        class="footerlink">Privacy
+        Policy</a>&nbsp;&nbsp;&nbsp;<span class="footercopy">:</span>&nbsp;&nbsp;&nbsp;<a href="http://www.babytobee.com/affiliate-program.html"
+        class="footerlink">Affiliate
+        Program</a>&nbsp;&nbsp;&nbsp;<span class="footercopy">:</span>&nbsp;&nbsp;&nbsp;<a href="http://www.babytobee.com/advertise-with-us.html"
+        class="footerlink" rel="nofollow">Advertise with
+        Us</a>&nbsp;&nbsp;&nbsp;<span class="footercopy">:</span>&nbsp;&nbsp;&nbsp;<a href="http://www.babytobee.com/site-map.html"
+        class="footerlink">Site Map</a></div>
+    </td>
+  </tr>
+</table>
+<script type="text/javascript">
+    $(function() {
+        $('#printLink').click(function(event) {
+            event.preventDefault();
+            window.print();
+        });
+
+        $("#bookmarkLink").fancybox({
+            //'autoDimensions': false,
+            //'height': 200,
+            //'width': 450,
+            titleShow: false,
+            ajax : {
+                type : "POST",
+                data: 'pageid=' + $("#bookmarkLink").attr('pageid') +
+            '&typeid=' + $("#bookmarkLink").attr('pagetypeid') +
+            '&bmtypeid=' + $("#bookmarkLink").attr('bmtypeid'),
+                url : "/bookmark/add/"
+            }
+        });
+
+
+
+
+    });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3571449-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type =
+    'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+    'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript"
+        src="https://dnn506yrbagrg.cloudfront.net/pages/scripts/0011/1799.js"></script>
+<script src="http://cdn.wibiya.com/Toolbars/dir_0929/Toolbar_929576/Loader_929576.js"
+        type="text/javascript"></script>
+        </div>
+        <div id="btmimg"></div>
+    </div>
+</body>
+</html>
+
+{/templates}
