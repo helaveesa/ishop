@@ -5,4 +5,494 @@
 {template root}
 
 
+  <html>
+    <head>
+      <meta name="title" content="zapcar.ru" />
+      <title>iShop.ru</title>
+      <meta name="keywords" content="Интернет-магазин для сантехнических работ " />
+      <meta name="description" content="Интрернет-магазин сантехнических работ по СПб и Лен. обл." />
+      <link rel="shortcut icon" href="http://www.iShop.ru/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="http://www.iShop.ru/favicon.ico" type="image/x-icon" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" type="text/css" href="/_css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/_css/ar2.css" />
+      <link rel="stylesheet" type="text/css" href="/_css/menu.css" />
+      <link rel="stylesheet" type="text/css" href="/_css/select.css" />
+      <link rel="stylesheet" type="text/css" href="/_css/dc3c.css" />
+      <script type="text/javascript" src="/_syslib/lib.common.js"></script>
+      <script type="text/javascript" src="/_syslib/advanced.select.js"></script>
+      <script type="text/javascript" src="/_syslib/menu/codethatsdk.js"></script>
+      <script type="text/javascript" src="/_syslib/menu/codethatmenupro.js"></script>
+      <script type="text/javascript" src="/_client-side/class.MavSelectBox.js"></script>
+      <script type="text/javascript" src="/_syslib/mootools.js"></script>
+      <script type="text/javascript" src="/_syslib/mootools-1.2-more.js"></script>
+      <script type="text/javascript" src="/_client-side/scripts.js"></script>
+    </head>
+
+
+    <body id="page" class="auth_page">
+      <div id="header">
+        <div id="wrapper">
+          <div class="header_content">
+            <div class="logo"><a href="/" title="вернуться на главную"><div class="logo_content"></div></a>
+            </div>
+
+
+            <div class="content">
+
+
+              <div class="phone">
+                <table>
+                  <tr>
+                    <td valign="top"><img src="/images/phone_header.png"/></td>
+                    <td valign="top">
+                      <div class="code">
+                        <div class="pageContent">(812)</div>
+                      </div>
+                    </td>
+                    <td valign="bottom">
+                      <div class="pageContent">980-56-16</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+
+              <div class="login">
+                <img src="/images/key_ico.png"><a href="#" onclick="return toogle_login();" class="login_header">войти на
+                    сайт</a>
+                  <div id="login_content" style="display: none;">
+                    <div id="login_block">
+                      <div style="text-align: right;"><a href="#" onclick="return toogle_login();" style="font-size:10px;">скрыть</a></div>
+                      <div id="CustomerBasketId">
+
+
+
+
+
+
+                        <script type="text/javascript">
+
+                          <!-- function validate_login_form(arg) {
+
+                               if (arg.userlogin.value == 'логин')
+                               arg.userlogin.value = '';
+
+                               if (arg && arg.userlogin &&
+
+                               trim(arg.userlogin.value) == ''
+
+                               && isElementVisible(arg.userlogin)) {
+
+                               alert('Пожалуйста, введите значение поля "логин"');
+
+                               arg.userlogin.focus();
+
+                               return false;
+
+                               }
+
+                               if (arg.userpassword.value == 'пароль')
+                               arg.userpassword.value = '';
+
+                               if (arg && arg.userpassword &&
+
+                               trim(arg.userpassword.value) == ''
+
+                               && isElementVisible(arg.userpassword)) {
+
+                               alert('Пожалуйста, введите значение поля "пароль"');
+
+                               arg.userpassword.focus();
+
+                               return false;
+
+                               }
+
+                               elems = arg.getElementsByTagName('input');
+                               elems_l = elems.length;
+
+                               for(var i=0; i<elems_l; i++){
+                                                       elems[i].readOnly='readonly';
+                                                       if(elems[i].className == 'submitButton'){
+                                                       elems[i].style.display='none';
+                                                       }
+                                                       }
+//              arg.style.backgroundColor = '#D4D0C8';
+                                                       return true;
+
+                                                       } -->
+
+                               </script>
+
+
+
+                        <form name="login" action="/" method="post" onsubmit="return validate_login_form(this)">
+                          <input type="hidden" name="loginform" value="1" />
+                          <table class="ar2_basket_info">
+                            <tr>
+                              <td colspan="2">
+                                <msg1>
+                                  <h3>Вход в интернет-магазин</h3>
+                                </msg1>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <input type="text" name="userlogin" value="логин" class="TextBox_empty"
+                                style="width: 200px" onfocus="if (this.value == 'логин') { this.value = '';
+                                this.className = 'TextBox_focus'; }" onblur="if (this.value == '') {
+                                this.value = 'логин'; this.className = 'TextBox_empty'; } else {
+                                this.className = 'TextBox'; }" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <input type="password" name="userpassword" value="пароль" class="TextBox_empty"
+                                 style="width: 200px" onfocus="if (this.value == 'пароль') { this.value = '';
+                                 this.className = 'TextBox_focus'; }" onblur="if (this.value == '') {
+                                 this.value = 'пароль'; this.className = 'TextBox_empty'; } else {
+                                 this.className = 'TextBox'; }" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" name="remember" value="1" id="cb1" class="CheckBox" style="" />
+                                <label for="cb1">запомнить данные</label>
+                              </td>
+                              <td>
+                                <input type="submit" name="login" value="Вход" class="submitButton" style="" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" align="center" height="30">
+                                <a href="/registration.html">Регистрация</a> / <a href="/recover_password.html">
+                                  <msg3>Забыли пароль?</msg3>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="clear: both;"></div>
+                <div class="search">
+                  <form name="search_code" action="/search.html" method="get" onsubmit="return validate_search_code_form(this)">
+                    <table border="0" cellspacing="3" cellpadding="2" style="font-size: 11px; margin-top: 15px;">
+                      <tr>
+                        <td style="width: 140px;font-size: 16px;font-family: Myriad Pro, Arial, sans-serif;
+                                   padding-right: 10px;" valign="center" align="left">
+                          <nobr>ПОИСК ПО АРТИКУЛУ</nobr>
+                        </td>
+                        <td style="width:100%;padding-right:20px;">
+                          <input class="TextBox_empty" type="text" name="article" value="артикул"
+                                 style="width: 100%"
+                                 onfocus="if (this.value == 'артикул') { this.value = ''; this.className =
+                                 'TextBox_focus'; } "
+                                 onblur="if (this.value == '') { this.value = 'артикул'; this.className =
+                                 'TextBox_empty'; }
+                                 else { this.className = 'TextBox'; }"/></td>
+                        <td style="width:75px" align="center">
+                          <input name="search" value="искать" type="submit" class="submitButton" />
+                        </td>
+                        <td style="width:30px; padding-left: 10px;" align="right">
+                          <a href="#" onclick="return toogle_Ssettings();"><img src="/images/search_settings.png" style="margin-bottom:-3px;"></a>
+                            <div id="search_settings" style="display: block;" class="search_settings">
+                              <p style="text-align: right;"><a href="#" onclick="return toogle_Ssettings();"
+                                                               style="font-size: 10px;">скрыть</a></p>
+                              <p><nobr><b>Сортировать:</b></nobr></p>
+                              <div>
+                                <select id="sort___search_results_by"
+                                        name="sort___search_results_by"
+                                        style="width: 140px; height: 25px;">
+                                  <option value="final_price">по цене</option>
+                                  <option value="code">по коду</option>
+                                </select>
+                              </nobr>
+                            </div>
+                            <p style="display:none;"><nobr><b>Срок поставки</b></nobr></p>
+                            <div style="display:none;">
+                              <select id="term" name="term" style="width:125px; height: 25px;">
+                                <option value="0">Не важен</option>
+                                <option value="10">До 10 дней</option>
+                                <option value="8">До 8-ми дней</option>
+                                <option value="5">До 5 дней</option>
+                                <option value="3">До 3-х дней</option>
+                                <option value="1">1 день</option>
+                              </select>
+                            </div>
+                            <p><nobr><b>Режим поиска</b></nobr></p>
+                            <div>
+                              <select id="smode" name="smode" style="width:140px">
+                                <option value="A">с аналогами</option>
+                                <option value="A0">без аналогов</option>
+                              </select>
+                            </div>
+
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+
+
+
+                    <script>
+                      window.onload = function() {document.getElementById("search_settings").style.display = "none";}
+                      function toogle_Ssettings() {
+                      if (document.getElementById("search_settings").style.display == "none") {
+                      document.getElementById("search_settings").style.display = "block";
+                      document.getElementById("search_settings").style.visibility = "visible";
+                      }
+                      else {
+                      document.getElementById("search_settings").style.display = "none";
+                      }
+                      return false;
+                      }
+                    </script>
+
+                  </form>
+
+                  <script type="text/javascript">
+                    <!--
+                       function validate_search_code_form(arg) {
+                       if (arg.article.value == 'артикул') arg.article.value = '';
+                       if (arg && trim(arg.article.value) == '' && isElementVisible(arg.article)) {
+                       alert('Пожалуйста, укажите значение поля "артикул"');
+                       arg.article.focus();
+                       return false;
+                       }
+
+
+                       if(arg.target=='_self'||arg.target==''||arg.target =='content_frame'){
+                       var b = arg.getElementsByTagName('input');
+                       for(var a=0, c=b.length; a < c; a++){
+                                                    b[a].readOnly='readonly';
+                                                    if(b[a].className == 'submitButton'||b[a].type=='submit'){
+                                                    b[a].style.display='none';
+                                                    }
+                                                    }
+                                                    }
+
+                                                    return true;
+                                                    }
+
+                                              //-->
+                       </script>
+                </div>
+              </div>
+
+              <script>
+                function toogle_login() {
+                if (document.getElementById('login_content').style.display == "none") {
+                document.getElementById('login_content').style.display = "";
+                }
+                else {
+                document.getElementById('login_content').style.display = "none";
+                }
+                return false;
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="main_menu">
+          <div id="wrapper">
+            <div id="top_menu" class="flc">
+              <script type="text/javascript">
+
+                <!--var jshover = function() {
+                        var sfEls = document.getElementById("top_menu").getElementsByTagName("li");
+                        for (var i=0; i < sfEls.length; i++)
+                                          {
+                                          sfEls[i].onmouseover=function()
+                                          {
+                                          this.className+=" jshover";
+                                          }
+                                          sfEls[i].onmouseout=function()
+                                          {
+                                          this.className=this.className.replace(new RegExp(" jshover\\b"), "");
+                                          }
+                                          }
+                                          }
+
+                                          if (window.attachEvent)
+                                          window.attachEvent("onload", jshover); -->
+              </script>
+              <ul>
+                <li >
+                  <a href="/about/company/">О компании</a>
+                </li>
+                <li >
+                  <a href="/how_to_order.html">Как сделать заказ</a>
+                </li>
+                <li >
+                  <a href="/pay.html">Оплата</a>
+                </li>
+                <li >
+                  <a href="/delivery.html">Доставка</a>
+                </li>
+                <li >
+                  <a href="">VIN-запросы</a>
+                  <ul>
+                    <li >
+                      <a href="/vin/form.html">Новый запрос</a>
+                    </li>
+                    <li class="last" >
+                      <a href="/shop/vin_requests.html">Архив запросов</a>
+                    </li>
+                  </ul>
+                </li>
+                <li >
+                  <a href="/partners.html">Наши партнеры</a>
+                </li>
+                <li >
+                  <a href="/info.html">Информация для клиентов</a>
+                </li>
+                <li class="last" >
+                  <a href="/contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="wrapper">
+          <div id="middle">
+            <div id="container">
+              <div id="content">
+                <div id="content_inner">
+                  <div class="pageContent"><h1>Специальные предложения</h1>
+                    <table width="100%">
+                      <tr>
+                        <td><a href="/d_catalog3/3/?nav_id=0"><img src="/images/zap_hyndai_porter.png"/></a></td>
+                        <td><a href="#"><img src="/images/acsessuary_dop_oborudovanie.png"/></a></td>
+                        <td><a href="d_catalog3/7/?nav_id=0"><img src="/images/zap_kit_avto.png"/></a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" style="height: 25px;">
+                          <div style="height: 25px;"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="/d_catalog3/1/?nav_id=0"><img src="/images/maslo_zidkosti.png"/></a></td>
+                        <td><a href="/d_catalog3/6/?nav_id=0"><img src="/images/kuzov_zap.png"/></a></td>
+                        <td><a href="#"><img src="/images/zap_to.png"/></a></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div style="height: 50px">
+                  </div>
+
+                  <h1>Анонсы</h1>
+
+                  <table width="100%"  style="margin-top: 20px; margin-bottom: 20px">
+                    <tr>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="sidebar" id="sideLeft">
+              <div id="sb_inner">
+                <div style="padding-bottom: 20px;">
+                  <div class="pageContent"><a href="#"><img src="/images/acsessuary_zap.png"/></a></div></div>
+                <div style="padding-bottom: 20px;">
+                  <div class="pageContent"><a href="#"><img src="/images/spec_predl.png"/></a></div></div>
+                <div style="padding-bottom: 20px;">
+                  <div class="pageContent"><a href="#"><img src="/images/sale.png"/></a></div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <div id="footer">
+          <div id="wrapper">
+            <div id="middle">
+              <table border="0" width="100%">
+                <tr>
+                  <td style="padding-left: 20px" class="white">
+                    <p>
+                      <a href="/message/" title="Обратная связь" style="margin-right: 35px;">Обратная связь</a>
+                      <a href="/sitemap.html" title="Карта сайта">Карта сайта</a>
+                    </p>
+                    <p style="padding-top: 15px;">
+                      &copy; 2012 iShop.ru. Все права защищены. <br/>
+                      <div style="color:#9a9a9a;">Сделано <a href="helaveesa.nolder@gmail.com"
+                                                             title="Helaveesa"
+                                                             style="color: #9a9a9a;">Helaveesa Nolder</a></div>
+                    </p>
+                  </td>
+                  <td align="right" style="padding-right: 20px" >
+                    <table>
+                      <tr>
+                        <td style="padding-bottom: 5px;" width="90"><img src="/images/phone_footer.png"/></td>
+                        <td style="padding-bottom: 5px;" valign="top"
+                            align="left">
+                          <div class="pageContent">8(812)980-56-16</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-bottom: 5px;"><img src="/images/icq_footer.png"/></td>
+                        <td style="padding-bottom: 5px;" valign="top"
+                            align="left">
+                          <div class="pageContent">684654654</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-bottom: 5px;"><img src="/images/skype_footer.png"/></td>
+                        <td style="padding-bottom: 5px;" valign="top"
+                            align="left">
+                          <div class="pageContent">iShop.ru</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-bottom: 5px;"><img src="/images/email_footer.png"/></td>
+                        <td style="padding-bottom: 5px;" valign="top"
+                            align="left">
+                          <div class="pageContent">helaveesa.nolder@gmail.com</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+        <script>
+
+/*function replaceSelect(el) {
+        new MavSelectBox({
+        elem: el.id,
+        onSelect: el.onchange
+        });
+        }*/
+
+        </script>
+
+      </body>{/n}
+    </html>{/n}
+
+    <!DOCTYPE html
+              PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 {/template}
