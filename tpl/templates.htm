@@ -11,19 +11,27 @@
 	        <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />{\n}
 	        <link rel="Shortcut Icon" type="image/x-icon" href="/img/favicon.ico" />{\n}
         </head>{\n}
+
         <body id="top">{\n}
             {$content | noAutoescape}{\n}
         </body>{\n}
+
     </html>{\n}
+
 {/template}
 
+
 {template navelt}
+
     <li><a href="{$link}">{$title}</a></li>
 {/template}
 
+
 {template sectelt}
+
     <li class="{$level}">★<a href="#{$anchor}">{$title}</a>
 {/template}
+
 
 {template stat}
   {literal}
@@ -49,6 +57,7 @@
     </div>
     {/literal}
 {/template}
+
 
 {template base}
     <div id="center">
