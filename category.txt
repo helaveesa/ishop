@@ -8,7 +8,7 @@
         },
         {
             "id":"2",
-            "name" : "Монтаж-услуги",
+            "name" : "Услуги",
             "icon":"/img/icon_service.png"
         },
         ....
