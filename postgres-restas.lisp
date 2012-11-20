@@ -76,6 +76,6 @@ characters in string S to STREAM."
                 *empty-result*))))
 
 
-(restas:start '#:restas.testdb :port 4242 :address "localhost")
+(restas:start '#:restas.testdb :port 4243 :address "localhost")
 (restas:debug-mode-on)
 
