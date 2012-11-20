@@ -3,13 +3,13 @@
         "categories" :
         {
             "id":"1",
-            "name" : "Акции",
-            "icon":"/img/icon_action.png"
+            "name" : "Каталог товаров",
+            "icon":"/img/icon_catalog.png"
         },
         {
             "id":"2",
-            "name" : "Специальные предложения",
-            "icon":"/img/icon_spec.png"
+            "name" : "Монтаж-услуги",
+            "icon":"/img/icon_service.png"
         },
         ....
     },
@@ -17,8 +17,8 @@
         "products" :
         {
             "id":"1",
-            "name" : "Еда мужская, 1 кг.",
-            "pic":"/img/eda.png"
+            "name" : "Галерея проектов",
+            "pic":"/img/icon_gallery.png"
         },
         ...
     }
