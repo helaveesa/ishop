@@ -71,10 +71,28 @@
     {
       "attr":
       {
-        "id":"tag_5",
+        "id":"tag_3",
         "rel":"tag"
       },
-      "data":"Заголовок",
+      "data":"Галерея",
       "state":"closed"
     }
+    {
+      "attr":
+      {
+        "id":"menu_category_1",
+        "rel":"gallery"
+      },
+      "data":"Галерея-работ",
+      "state":"closed"
+    },
+    {
+      "attr":
+      {
+        "id":"menu_category_2",
+        "rel":"contacts"
+      },
+      "data":"Контакты",
+      "state":"closed"
+    },
 ]
