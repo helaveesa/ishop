@@ -19,7 +19,7 @@
 (in-package #:restas.testdb)
 
 (defvar *spec-db* '("ravtadb" "ravta" "ravta1111" "localhost"))
-(defvar *empty-result* "нихрена не нашлось :(")
+(defvar *empty-result* "ничего не нашлось :(")
 (defvar *price-max* 999999)
 (defvar *price-max* most-positive-fixnum)
 
@@ -76,6 +76,6 @@ characters in string S to STREAM."
                 *empty-result*))))
 
 
-(restas:start '#:restas.testdb :port 4242 :address "localhost")
+(restas:start '#:restas.testdb :port 4244 :address "localhost")
 (restas:debug-mode-on)
 

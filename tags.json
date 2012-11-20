@@ -18,9 +18,9 @@
       "attr":
       {
         "id":"menu_category_2",
-        "rel":"bar"
+        "rel":"service"
       },
-      "data":"Бар",
+      "data":"Услуги",
       "state":"closed"
     },
     {
@@ -29,7 +29,7 @@
         "id":"tag_2",
         "rel":"tag"
       },
-      "data":"Завтрак",
+      "data":"Услуга1",
       "state":"closed"
     },
     {
@@ -37,7 +37,7 @@
         "id":"tag_3",
         "rel":"tag"
       },
-      "data":"Ланч",
+      "data":"Услуга2",
       "state":"closed"
     },
     {
@@ -46,7 +46,7 @@
         "id":"tag_4",
         "rel":"tag"
       },
-      "data":"Детское меню",
+      "data":"Услуга3",
       "state":"closed"
     },
     {
@@ -55,7 +55,16 @@
         "id":"tag_5",
         "rel":"tag"
       },
-      "data":"Банкетное меню",
+      "data":"Услуга4",
+      "state":"closed"
+    }
+    {
+      "attr":
+      {
+        "id":"tag_5",
+        "rel":"tag"
+      },
+      "data":"Услуга5",
       "state":"closed"
     }
 ]

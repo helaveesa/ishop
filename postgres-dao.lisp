@@ -6,7 +6,7 @@
 ;; Форма (or db-null integer) для столбца, который может иметь значения NULL.
 
 (defvar *spec-db* '("ravtadb" "ravta" "ravta1111" "localhost"))
-(defvar *empty-result* "нихрена не нашлось :(")
+(defvar *empty-result* "ничего не нашлось :(")
 (defvar *price-max* 536870911 "32-разрядное most-positive-fixnum")
 (defvar *price-max* most-positive-fixnum)
 
