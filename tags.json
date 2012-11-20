@@ -26,27 +26,46 @@
     {
       "attr":
       {
+        "id":"menu_category_3",
+        "rel":"news"
+      },
+      "data":"Новости",
+      "state":"closed"
+    },
+    {
+      "attr":
+      {
         "id":"tag_2",
         "rel":"tag"
       },
-      "data":"Услуга1",
-      "state":"closed"
-    },
-    {
-      "attr":{
-        "id":"tag_3",
-        "rel":"tag"
-      },
-      "data":"Услуга2",
+      "data":"Каталог",
       "state":"closed"
     },
     {
       "attr":
       {
-        "id":"tag_4",
-        "rel":"tag"
+        "id":"menu_category_1",
+        "rel":"categoryA"
       },
-      "data":"Услуга3",
+      "data":"КатегорияA",
+      "state":"closed"
+    },
+    {
+      "attr":
+      {
+        "id":"menu_category_2",
+        "rel":"categoryB"
+      },
+      "data":"КатегорияB",
+      "state":"closed"
+    },
+    {
+      "attr":
+      {
+        "id":"menu_category_3",
+        "rel":"categoryC"
+      },
+      "data":"КатегорияC",
       "state":"closed"
     },
     {
@@ -55,16 +74,7 @@
         "id":"tag_5",
         "rel":"tag"
       },
-      "data":"Услуга4",
-      "state":"closed"
-    }
-    {
-      "attr":
-      {
-        "id":"tag_5",
-        "rel":"tag"
-      },
-      "data":"Услуга5",
+      "data":"Заголовок",
       "state":"closed"
     }
 ]
