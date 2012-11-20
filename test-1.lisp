@@ -29,7 +29,7 @@ characters in string S to STREAM."
             ))))
 
 (defvar *spec-db* '("ravtadb" "ravta" "ravta1111" "localhost"))
-(defvar *empty-result* "нихрена не нашлось :(")
+(defvar *empty-result* "ничего не нашлось :(")
 
 (defun chmod-socket (sock-path &optional (permission "777"))
   (unless (sb-impl::process-exit-code
